@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background-color: #F7F1E4;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(140, 106, 37, 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #EAE0C7 0%, #F5EFDC 50%, #EAE0C7 100%);
+  background-size: 800px 100%;
+  animation: shimmer 1.6s linear infinite;
+}
